@@ -1,0 +1,42 @@
+.bem-vindo {
+    background-color: #00ADEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-radius: 0px 0px 100px 0px;
+   height: 50vh;
+
+}
+.bem-vindo img {
+   width:  17.13vw ;
+}
+
+.cta-bem-vindo{
+    width: 33.33vw;
+}
+
+.cta-bem-vindo p{
+color: white;
+font-size: 1.25rem;
+}
+
+.cta-bem-vindo h1{
+    font-size:clamp(3vw,2rem, 4.375rem);
+    font-weight: 100;
+    }
+
+
+
+    @media (max-width: 932px) {
+        .bem-vindo{
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            margin-top: 1px;
+
+        }
+        .cta-bem-vindo{
+            width: 80vw;
+        }
+    }

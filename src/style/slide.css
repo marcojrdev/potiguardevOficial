@@ -1,0 +1,79 @@
+.sld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom:  52.46589716684155vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size:clamp(2rem, 3.75rem, 2vw);
+    font-weight: 400;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Indicadores circulares */
+.indicators {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicators button.active {
+    background: #00EEFD;
+}

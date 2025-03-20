@@ -1,0 +1,136 @@
+.footer{
+    background-color: #00ADEC;
+    height: 100vh;
+}
+.ten-cont{
+    background-color: #272C30;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+    
+   
+    border-radius: 110px 0px 0px 110px;
+}
+
+.contato {
+    background-color: #0081D9;
+    height: 53.93494228751312vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    
+}
+
+.ptd {
+    position: relative;
+    top: -35%;
+    width: 35.416666666666664vw;
+}
+
+.contato h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2vh;
+}
+
+.social {
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vh;
+}
+
+.team-member h2 {
+    color: #0081D9;
+}
+
+.Equipe{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00EEFD;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos do slide (aparece apenas em telas menores) */
+.slide-container {
+    display: none;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    touch-action: pan-x;
+    cursor: grab;
+}
+
+.slide .team-member {
+    min-width: 100%;
+    text-align: center;
+}
+
+/* Ativa o slide em telas menores */
+@media (max-width: 862px) {
+    .team-container {
+        display: none;
+    }
+    .slide-container {
+        display: block;
+    }
+}
+
+@media (max-width: 446px) {
+    .ten-cont h1 {
+        font-size: 2rem;
+    }
+
+    .ptd {
+        top: -35%;
+        width: 60vw;
+    }
+    .ten-cont  {
+        top: -15vh;
+    }
+   
+}

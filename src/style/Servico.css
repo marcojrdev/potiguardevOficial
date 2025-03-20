@@ -1,0 +1,49 @@
+.Servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10.416666666666666vw;
+    
+    gap: 10vh;
+}
+
+.itenServicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56.458333333333336vw;
+    gap: 10.49317943336831vh;
+    }
+
+.Servico {
+    width:  20vw;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    gap: 20px;
+}
+
+.Servico h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1092px) {
+    .itenServicos {
+        flex-direction: column;
+        gap: 100px;
+        
+    }
+    .Servicos {
+        padding-bottom: 20vh;
+    }
+
+    .Servico {
+        width:  80vw;
+    }
+}
+
