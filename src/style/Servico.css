@@ -32,18 +32,31 @@
     font-weight: 600;
 }
 
+@media (max-width: 1257px) {
+
+    .Servicos {
+        
+        margin-bottom: 10vh;
+    }
+
+}
+
 @media (max-width: 1092px) {
     .itenServicos {
         flex-direction: column;
-        gap: 100px;
+        gap: 19.49vh;
+        
         
     }
     .Servicos {
-        padding-bottom: 20vh;
+        padding-bottom: 25vh;
     }
 
     .Servico {
         width:  80vw;
+        
     }
 }
+
+
 

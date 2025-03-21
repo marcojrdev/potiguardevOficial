@@ -77,3 +77,11 @@
 .indicators button.active {
     background: #00EEFD;
 }
+
+@media (max-width: 594px) {
+    .caption {
+        
+        bottom:  30%;
+        left: 50%;
+    }
+}

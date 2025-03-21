@@ -39,7 +39,7 @@ gap: 10vh;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 965px) {
     .portifolio {
         margin-bottom: 80vh;
     }
